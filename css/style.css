@@ -1,0 +1,168 @@
+/* 所有元素 */
+*{
+    /* 註解 Ctrl + / */
+
+    /* 加上輪廓框線 */
+    /* outline: 1px solid #000; */
+}
+
+/* 網頁預設放內容的地方 */
+body{
+    font-family: '微軟正黑體';
+    color: #fff;
+    background-color: #222;
+
+    /* 避免文字被選取 us */
+    user-select: none;
+
+    /* 加入背景圖片，url裡面貼上圖片網址 */ 
+    background-image: url(https://images.pexels.com/photos/11513528/pexels-photo-11513528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+/* 自己建的div，用來放作品集的所有內容 */
+.wrap{
+    /* 主要內容寬度最大不超過1200px，變小會自動縮小 maw */
+    max-width: 1200px;
+
+    /* 水平置中 m0-a*/
+    margin: 0 auto;
+
+    /* 內距 */
+    padding: 20px;
+}
+
+/* 標題與創作者區塊 */
+.header{
+    /* 文字置中 tac */
+    text-align: center;
+}
+
+/* Web Design */
+.type{
+    /* 絕對定位 */
+    position: absolute;
+
+    /* 外型 */
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+    /* 動畫時間 trsdu */
+    transition-duration: 0.5s;
+}
+
+/* Web Design 滑鼠移入效果 */
+.type:hover{
+    background-color: #fff;
+    color: #222;
+}
+
+/* 作品集名稱 */
+.show{
+    /* 垂直顯示 wm ， vertical(垂直)，lr（左到右） */
+    writing-mode: vertical-lr;
+    
+    /* 水平置中 */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 字體、字距 */
+    font-size: 80px;
+    letter-spacing: 15px;
+
+    /* 離上方的距離 */
+    padding-top: 10%;
+}
+
+/* 創作者資訊 */
+.creator{
+    /* 字體、字距 */
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    /* 字體粗細，範圍是100（細） - 900（粗） */
+    font-weight: 300;
+
+    /* 離上下方距離設定 */
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+/* 設定時所有元素加上 outline */
+
+/* 作品列表 */
+ul{
+    /* 去除預設樣式 lisn、左邊內距 pl */
+    list-style: none;
+    padding-left: 0px;
+
+    /* 水平並排 df、水平置中 jcc */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* 作品項目 */
+li{
+    /* 基礎樣式 */
+    width: 30%;
+    height: 230px;
+    border-radius: 10px;
+    /* border: 1px solid #222; */
+    border: 1px solid rgba(255,255,255,0.3);
+   
+    
+    /* 向右間隔 */
+    margin-right: 30px;
+    
+    /* 動畫完成時間 */
+    transition-duration: 0.5s;
+    
+}
+
+/* 作品項目 - 滑鼠移入效果 */
+li:hover{
+    /* background-color: #bbb; */
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0.8;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+
+/* 超連結 */
+a {
+    /* 去除文字樣式 tdn */
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    
+    
+    /* 位置調整 */
+    /* 顯示方式 df */
+    display: flex;
+
+    /* 水平置中 jcc */
+    justify-content: center;
+
+    /* 垂直置中 aic */
+    align-items: center;
+
+    /* 更改排列方向為上下 fxdc */
+    flex-direction: column;
+  }
+
+/* 作品標題 */
+h4{
+    font-size: 28px;
+}
+
+/* 作品介紹 */
+p{
+    font-size: 12px;
+}
